@@ -1,0 +1,9 @@
+resources:
+  - ../../base
+namespace: prod
+replicas:
+  - name: web
+    count: 3
+images:
+  - name: nginx
+    newTag: 1.27.2-alpine
